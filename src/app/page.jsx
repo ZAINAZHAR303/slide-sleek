@@ -1,3 +1,4 @@
+import Founder from "@/components/Founder";
 import Intro from "@/components/Intro";
 import MainImg from "@/components/MainImg";
 import NavBar from "@/components/NavBar";
@@ -14,6 +15,7 @@ export default function Home() {
       <Intro />
       <MainImg />
       <Services />
+      <Founder />
       
     </div>
   );
