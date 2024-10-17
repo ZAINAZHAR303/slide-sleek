@@ -1,10 +1,9 @@
-
 import Image from "next/image";
 import Found from "../assets/founder.jpg";
 import feature from "../assets/FounderFeatures";
 const Founder = () => {
   return (
-    <section className="bg-white p-4 w-full mt-[48px] flex flex-col gap-[10px] ">
+    <section className="bg-gray-100  p-4 w-full mt-[48px] flex flex-col gap-[10px] ">
       <Image src={Found} alt="founder" className="rounded-[25px] mb-10" />
       <h3 className="text-[40px] mb-[24px] text-black">Founder & CEO</h3>
       <span className="text-[16px] text-custom-blue ">Zubair Azhar</span>
@@ -15,13 +14,23 @@ const Founder = () => {
         clicks innovation streamline front end aradigms expedite granular human
         capital rather than intuitive testing procedures
       </p>
-
-      {
-        feature && feature.length ? feature.map(()=>(
-
-        )): 
-          
-      }
+      <div className="shadow-2xl flex flex-col rounded-2xl gap-10 p-10 bg-white mb-10">
+        {feature && feature.length
+          ? feature.map((item) => (
+              <div className="flex gap-4 ">
+                <span className=" flex items-center justify-center p-4 h-[4rem] w-[4rem] bg-white-300 rounded-full shadow-md shadow-gray-300 inset ">
+                  {item.icons}
+                </span>
+                <div>
+                  <span className="text-custom-gray ">{item.title}</span>
+                  <h6 className="text-black mt-[4px] text-[14px] font-semibold ">
+                    {item.desc}
+                  </h6>
+                </div>
+              </div>
+            ))
+          : null}
+      </div>
     </section>
   );
 };
