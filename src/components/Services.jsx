@@ -29,7 +29,7 @@ const Services = () => {
                 alt="img"
                 className="w-[100px] cover my-8"
               />
-              <h6 className="mb-[24px] text-[24px] font-bold">{item.title}</h6>
+              <h6 className="mb-[24px] text-[24px] text-black font-bold">{item.title}</h6>
               <p className="mb-[32px] text-custom-gray text-[16px]">
                 {item.desc}
               </p>
@@ -37,7 +37,7 @@ const Services = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href={item.link}
-                className="flex items-center cursor-pointer text-[16px] font-semibold transition-all duration-400 ease-out hover:text-custom-blue">
+                className="flex items-center cursor-pointer text-[16px] font-semibold transition-all duration-400 ease-out text-black hover:text-custom-blue">
                 Get Started
                 <ArrowForward className="ml-2 text-[16px] font-bold" />
               </a>
