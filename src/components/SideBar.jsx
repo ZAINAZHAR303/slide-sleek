@@ -3,7 +3,7 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import Logo from "../assets/logo-1.svg";
+import Logo from "../assets/LOGO.svg";
 const SideBar = ({close}) => {
     const modelRef = useRef();
     const closeModel = (e) =>{

@@ -6,12 +6,12 @@ import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import SideBar from "@/components/SideBar";
+import '../app/globals.css';
 import Image from "next/image";
-
 
 export default function Home() {
   return (
-    <div className="flex flex-col " >
+    <div className="flex flex-col ">
       {/* <SideBar /> */}
       <NavBar />
       <Intro />
@@ -20,6 +20,7 @@ export default function Home() {
       <Founder />
       <Projects />
       <CustomerFeedBack />
+     
     </div>
   );
 }

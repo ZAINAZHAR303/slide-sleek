@@ -6,15 +6,18 @@ import React, { useState } from 'react'
 import Logo from "../assets/LOGO.svg"
 import {ViewWeek} from "@mui/icons-material"
 import Image from "next/image";
-import SideBar from "./SideBar"
+import SideBar from "./SideBar";
+import justified from "../assets/justified.png"
+
+
 const NavBar = () => {
   const [sidebar,setSidebar] = useState(false)
   return (
-    <nav className="flex justify-between w-full items-center p-4">
-        <Image src={Logo} alt="logo" width={157} height={46} priority className='h-[70px] w-[70px] ' />
+    <nav className="flex justify-between w-full items-center p-4 md:hidden ">
+        <Image src={Logo} alt="logo"  priority className='h-[70px] w-[70px] ' />
 
-        <button onClick={()=>sidebar === true ?setSidebar(false): setSidebar(true)} className="w-[5rem] h-[3rem] bg-black rounded-md " >
-          <ViewWeek className="text-white " />
+        <button onClick={()=>sidebar === true ?setSidebar(false): setSidebar(true)} className="w-[5rem] h-[3rem] bg-black rounded-md flex items-center justify-center" >
+          <Image src={justified} alt='img'   className='h-[30px] w-[30px] ' />
         </button>
         {
           sidebar && (

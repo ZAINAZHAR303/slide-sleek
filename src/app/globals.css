@@ -30,4 +30,50 @@ body {
       display: none;
     }
 }
+.slick-slide {
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.slick-list {
+  margin: 0 -10px; /* Compensate for the margin on slick-slide */
+}
+/* Style for dots */
+/* Ensure slick-slide spacing */
+.slick-slide {
+  margin: 0 10px; /* Adjust slide margin */
+}
+
+.slick-list {
+  margin: 0 -10px; /* Adjust to avoid content cut-off */
+}
+
+/* Dots Styles */
+.slick-dots {
+  bottom: -30px; /* Positioning of the dots */
+  text-align: center; /* Center the dots */
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Space between dots */
+}
+
+.slick-dots li button {
+  width: 12px; /* Width of the dot */
+  height: 12px; /* Height of the dot */
+  border-radius: 50%; /* Circular dots */
+  background: #fff; /* Default dot color */
+  opacity: 0.7; /* Default dot opacity */
+  border: none; /* Remove button border */
+  transition: opacity 0.3s; /* Smooth opacity transition */
+}
+
+.slick-dots li button:hover {
+  opacity: 1; /* Increase opacity on hover */
+}
+
+.slick-dots li.slick-active button {
+  background: #007bff; /* Active dot color */
+  opacity: 1; /* Full opacity for active dot */
+}
+
 }
