@@ -6,6 +6,9 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+body {
+  overflow-x: hidden;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

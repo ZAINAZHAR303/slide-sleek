@@ -8,14 +8,17 @@ import Services from "@/components/Services";
 import SideBar from "@/components/SideBar";
 import '../app/globals.css';
 import Image from "next/image";
+import SideBarLarge from "@/components/SideBarLarge";
 
 export default function Home() {
   return (
     <div className="flex flex-col ">
-      {/* <SideBar /> */}
+      <SideBarLarge />
       <NavBar />
+      <div className="xl:flex">
       <Intro />
       <MainImg />
+      </div>
       <Services />
       <Founder />
       <Projects />

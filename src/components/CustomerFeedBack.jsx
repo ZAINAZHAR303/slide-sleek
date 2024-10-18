@@ -12,7 +12,7 @@ const CustomerFeedBack = () => {
   // Slider settings with responsive design
   const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow:1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -26,26 +26,26 @@ const CustomerFeedBack = () => {
       {
         breakpoint: 1200, // For large screens
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1024, // For medium screens
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 820, // For tablets
+        breakpoint: 900, // For tablets
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 540, // For mobile devices
+        breakpoint: 728, // For mobile devices
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -55,7 +55,7 @@ const CustomerFeedBack = () => {
   };
 
   return (
-    <section className="bg-custom-blue flex  flex-col  w-full p-4 slider-container">
+    <section className="bg-custom-blue flex  flex-col p-8 slider-container md:w-calc-screen-360 ml-[300px]">
       <h3 className="text-[36px] mt-[24px] text-white text-center font-bold">
         Customer Feedbacks
       </h3>
@@ -64,7 +64,7 @@ const CustomerFeedBack = () => {
         {customer.map((item) => (
           <div
             key={item.id}
-            className="bg-white rounded-2xl self-center flex flex-col items-start my-4 p-8 min-h-[25rem] max-w-[25rem] "
+            className="bg-white w-[20rem] rounded-2xl flex flex-col items-start my-4 p-8 h-[20rem]   "
           >
             <p className="text-custom-gray text-[16px] italic">
               "{item.comment}"

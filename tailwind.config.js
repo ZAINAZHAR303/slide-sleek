@@ -7,6 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'typing': 'typing 3.5s steps(30) 1s 1 normal both, blink 0.75s step-end infinite',
+      },
+      keyframes: {
+        typing: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+        blink: {
+          '50%': { 'border-color': 'transparent' },
+          '100%': { 'border-color': 'black' },
+        },
+      },
+      width: {
+        'calc-screen-360': 'calc(100vw - 300px)', // Define the custom width utility
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -15,31 +31,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // If you want to use custom utilities like text-shadow
+    // require('tailwindcss-textshadow')
+  ],
 };
 
-
-
-// extend: {
-//   // Add custom colors
-//   colors: {
-//     'custom-blue': '#1fb6ff',
-//     'custom-purple': '#7e5bef',
-//   },
-//   // Add custom font sizes
-//   fontSize: {
-//     'xxs': '.625rem',
-//   },
-//   // Add custom spacing
-//   spacing: {
-//     '72': '18rem',
-//     '84': '21rem',
-//     '96': '24rem',
-//   },
-//   // Add custom classes
-//   textShadow: {
-//     'default': '0 2px 5px rgba(0, 0, 0, 0.5)',
-//     'lg': '0 2px 10px rgba(0, 0, 0, 0.5)',
-//   },
-// },
-// },
+// Remove commented code if not needed or activate plugins/utilities

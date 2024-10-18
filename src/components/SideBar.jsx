@@ -1,18 +1,21 @@
-'use client';
-
+"use client";
 
 import React, { useRef } from "react";
 import Image from "next/image";
 import Logo from "../assets/LOGO.svg";
-const SideBar = ({close}) => {
-    const modelRef = useRef();
-    const closeModel = (e) =>{
-        if(modelRef.current === e.target){
-            close();
-        }
+const SideBar = ({ close }) => {
+  const modelRef = useRef();
+  const closeModel = (e) => {
+    if (modelRef.current === e.target) {
+      close();
     }
+  };
   return (
-    <div ref={modelRef} onClick={closeModel} className=" z-10 fixed overflow-y-scroll scrollbar-none h-[100%] w-full inset-0  " >
+    <div
+      ref={modelRef}
+      onClick={closeModel}
+      
+      className=" z-10 fixed overflow-y-scroll scrollbar-none h-[100%] w-full inset-0 ">
       <aside className="p-[40px] w-[300px] h-full bg-[#1f1f1f] top-0 fixed overflow-y-scroll scrollbar-none  ">
         <Image src={Logo} alt="logo" />
 

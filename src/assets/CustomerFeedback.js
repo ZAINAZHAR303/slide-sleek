@@ -33,7 +33,7 @@ const customer = [
   },
   {
     id: 4,
-    "comment":"Meine Erwartungen wurden vollkommen erfüllt und teilweise übertroffen. So hat sich Zubair Azhar unmittelbar nach Übersendung der Unterlagen mit Ideen proaktiven Vorschlägen zurück gemeldet und so in kürzester Zeit eine Power Point Präsentation erstellt wie ich sie nicht hätte realisieren können.",
+    "comment":"Meine Erwartungen wurden vollkommen erfüllt und teilweise übertroffen. So hat sich Zubair Azhar unmittelbar nach Übersendung der Unterlagen mit Ideen proaktiven Vorschlägen zurück gemeldet.",
     "name": "florian_hoffman",
     "img":  "F",
     "color": "#a52a2a",
