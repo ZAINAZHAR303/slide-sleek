@@ -17,7 +17,7 @@ const Intro = () => {
         will assist you in achieving your desired goals. Please do not hesitate
         to contact us.
       </p>
-      <button className="bg-custom-blue  rounded-lg px-8 py-4 text-[14px] font-semibold text-white cursor-pointer transition-all duration-300 hover:bg-custom-gray">
+      <button className="bg-custom-blue z-30  rounded-lg px-8 py-4 text-[14px] font-semibold text-white cursor-pointer transition-all duration-300 hover:bg-custom-gray">
         DOWNLOAD CV
       </button>
     </section>

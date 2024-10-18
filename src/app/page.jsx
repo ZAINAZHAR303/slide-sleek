@@ -12,10 +12,10 @@ import SideBarLarge from "@/components/SideBarLarge";
 
 export default function Home() {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       <SideBarLarge />
       <NavBar />
-      <div className="xl:flex">
+      <div className="xl:flex -z-30 ">
       <Intro />
       <MainImg />
       </div>
