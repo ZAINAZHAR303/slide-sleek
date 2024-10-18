@@ -55,7 +55,7 @@ const CustomerFeedBack = () => {
   };
 
   return (
-    <section className="bg-custom-blue flex  flex-col p-8 slider-container md:w-calc-screen-360 ml-[300px]">
+    <section className="bg-custom-blue flex  flex-col p-8 slider-container md:w-calc-screen-360 md:ml-[300px]">
       <h3 className="text-[36px] mt-[24px] text-white text-center font-bold">
         Customer Feedbacks
       </h3>
@@ -64,7 +64,7 @@ const CustomerFeedBack = () => {
         {customer.map((item) => (
           <div
             key={item.id}
-            className="bg-white w-[20rem] rounded-2xl flex flex-col items-start my-4 p-8 h-[20rem]   "
+            className="bg-white w-[20rem] rounded-2xl flex flex-col items-start my-4 p-8 h-[25rem] lg:h-[20rem]   "
           >
             <p className="text-custom-gray text-[16px] italic">
               "{item.comment}"

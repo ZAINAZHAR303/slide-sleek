@@ -3,7 +3,7 @@ import Image from "next/image"
 import projects from "../assets/ProjectsData";
 const Projects = () => {
   return (
-   <section className="bg-gray-100 md:w-calc-screen-360 ml-[300px]  ">
+   <section className="bg-gray-100 md:w-calc-screen-360 md:ml-[300px]  ">
     <h3 className='text-black text-[40px] my-[24px] text-center font-bold '>Our Recent Projects</h3>
     <div className="grid grid-cols-1  lg:grid-cols-2">
     {

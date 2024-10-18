@@ -3,7 +3,7 @@ import Found from "../assets/Founder.jpg";
 import feature from "../assets/FounderFeatures";
 const Founder = () => {
   return (
-    <section className="bg-gray-100  p-4 w-full mt-[48px] flex flex-col gap-[10px] md:w-calc-screen-360 ml-[300px] lg:flex-row lg:items-center">
+    <section className="bg-gray-100  p-4 w-full mt-[48px] flex flex-col gap-[10px] md:w-calc-screen-360 md:ml-[300px] lg:flex-row lg:items-center">
       <Image src={Found} alt="founder" className="rounded-[25px] mb-10 lg:w-[300px] lg:h-[400px]" />
       <div>
         <h3 className="text-[40px] mb-[24px] text-black font-bold">Founder & CEO</h3>

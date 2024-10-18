@@ -8,7 +8,7 @@ const Intro = () => {
         Hello! I am Zubair Azhar
       </span>
       <div className="w-max">
-        <h1 className="font-bold text-[36px] mt-[40px] mb-[50px] w-[20ch] overflow-hidden whitespace-nowrap border-r-2 border-black animate-typing">
+        <h1 className="font-bold max-sm:text-[24px] text-[36px] mt-[40px] mb-[50px] w-[20ch] overflow-hidden whitespace-nowrap border-r-2 border-black animate-typing">
           Microsoft Powerpoint Expert.
         </h1>
       </div>

@@ -9,7 +9,7 @@ import ServiceContact from "./ServiceContact";
 
 const Services = () => {
   return (
-    <div className="w-full bg-custom-blue relative mt-20 flex flex-col items-center pt-[70px] md:w-calc-screen-360 ml-[300px]">
+    <div className="w-full bg-custom-blue relative mt-20 flex flex-col items-center pt-[70px] md:w-calc-screen-360 md:ml-[300px]">
       <span className="absolute -z-10 rounded-full bg-[#EAEBFD] w-[30rem] h-[30rem] -top-[6rem]"></span>
       <span className="text-white text-[16px] font-semibold">
         What's Going On
