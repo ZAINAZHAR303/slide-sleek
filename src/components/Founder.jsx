@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Found from "../assets/founder.jpg";
+import Found from "../assets/Founder.jpg";
 import feature from "../assets/FounderFeatures";
 const Founder = () => {
   return (
